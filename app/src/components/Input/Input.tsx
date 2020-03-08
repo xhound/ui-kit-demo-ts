@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {themr} from 'react-css-themr';
-import {EventHandler} from 'react';
 
 export const INPUT = Symbol('Input');
 

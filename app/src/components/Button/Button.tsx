@@ -2,7 +2,6 @@ import * as React from 'react';
 import classnames from 'classnames';
 import {themr} from 'react-css-themr';
 import css from './Button.module.css';
-import {ComponentClass} from 'react';
 import {EventHandler, MouseEvent} from 'react';
 
 export const BUTTON = Symbol('Button') as symbol;

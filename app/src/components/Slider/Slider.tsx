@@ -28,7 +28,7 @@ const ControlIncrease = (props: TFullButtonProps) => <Button {...props}>{`→`}<
 
 const ControlDecrease = (props: TFullButtonProps) => <Button {...props}>{`←︎`}</Button>;
 
-export const Slider = (props: any) => {
+export const Slider = (props: {images: string[]}) => {
     return (
         <Stepper theme={sliderTheme}
                  minValue={0}

@@ -36,7 +36,7 @@ const onClickHandler = (value: string) => () => {
     alert(`Your Stepper value: ${value}`);
 };
 
-const SomeShowView = (props: {
+const SomeValueRenderer = (props: {
     value: string
 }) => <Button theme={someControlledTheme} onClick={onClickHandler(props.value)}>{props.value}</Button>;
 
@@ -48,11 +48,11 @@ function App() {
                 <Button isPrimary={true} theme={buttonTheme}>I am a Themed Button</Button>
             </section>
             <section>
-                <Stepper theme={stepperTheme} minValue={0} maxValue={10}/>
+                <Stepper theme={stepperTheme} minValue={0} maxValue={10}  step={.5} />
             </section>
             <section>
-                <Stepper theme={stepperTheme} ValueRenderer={SomeShowView} step={1}
-                         minValue={0} maxValue={10}/>
+                <Stepper theme={stepperTheme} ValueRenderer={SomeValueRenderer}
+                         minValue={-9} maxValue={20} />
             </section>
             <section>
                 <Slider images={imagesArray}/>
