@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Button, TButtonTheme} from "../Button/Button";
+import {Button, TFullButtonProps} from "../Button/Button";
 import {Stepper} from "../Stepper/Stepper";
 import css from './Slider.module.css';
 
@@ -24,9 +24,9 @@ const Images = (images: string[]) => (props: {theme: {container?: string}, value
     );
 };
 
-const ControlIncrease = (props: {theme: TButtonTheme}) => <Button {...props}>{`→`}</Button>;
+const ControlIncrease = (props: TFullButtonProps) => <Button {...props}>{`→`}</Button>;
 
-const ControlDecrease = (props: {theme: TButtonTheme}) => <Button {...props}>{`←︎`}</Button>;
+const ControlDecrease = (props: TFullButtonProps) => <Button {...props}>{`←︎`}</Button>;
 
 export const Slider = (props: any) => {
     return (

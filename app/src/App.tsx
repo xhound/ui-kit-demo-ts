@@ -44,7 +44,7 @@ function App() {
     return (
         <div className="App">
             <section>
-                <Button isPrimary={true} theme={{}}>I am a Button</Button>
+                <Button isPrimary={true}>I am a Button</Button>
                 <Button isPrimary={true} theme={buttonTheme}>I am a Themed Button</Button>
             </section>
             <section>
