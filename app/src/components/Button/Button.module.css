@@ -1,0 +1,40 @@
+.container {
+  user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+}
+
+.container:not(:disabled) {
+   cursor: pointer;
+ }
+
+
+.container_primary {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  background-color: green;
+  box-shadow: 0 2px 3px silver;
+}
+
+.container_primary:hover {
+   background-color: greenyellow;
+ }
+
+.container_primary:active {
+   transform: translateY(0.1rem);
+   background-color: lawngreen;
+   box-shadow: none;
+ }
+
+
+.container_flat {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}

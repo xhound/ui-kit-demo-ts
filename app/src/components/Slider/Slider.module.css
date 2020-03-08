@@ -1,0 +1,47 @@
+.container,
+.showValue,
+.decrease,
+.increase {
+    display: flex;
+}
+.decrease,
+.increase,
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.showValue {
+    order: 2
+}
+
+.decrease {
+    order: 1
+}
+
+.increase {
+    order: 3
+}
+
+.decrease,
+.increase {
+    margin: 0 .3rem;
+    height: 30px;
+    width: 30px;
+    color: grey;
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%;
+    line-height: 28px;
+}
+
+.decrease:hover,
+.increase:hover {
+     background-color: darkgreen;
+     color: white;
+ }
+
+.decrease:active,
+.increase:active {
+     background-color: green;
+ }
